@@ -129,7 +129,84 @@ footer{
     gap: 15px;
 }
 
+@media (min-width:0px){
+    nav ul li{
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        font-family: 'Chakra Petch', sans-serif;
+    }
 
+    .video__servicios{
+        width: 300px;
+    }
+
+    .imagen__ibanez{
+        margin-top: 15px;
+        padding: 2px;
+        height: 575px;
+        width: 300px;
+        margin-left: 30px;
+    } 
+    
+    .imagen__ibanez--bajo{
+        height: 555px;
+        width: 350px;
+        padding: 2px;
+    }
+
+    .imagen__bajo6cuerdas{
+        height: 250px;
+        width: 250px;
+        padding: 50px;
+        margin-left: 50px;
+    }
+    
+    .imagen__bajo6cuerdas--schecter{
+        padding: 100px;
+        width: 250px;
+    }
+    
+    .imagen__bajo6cuerdas--yamaha{
+        height: 300px;
+        width: 250px;
+        padding: 15px;
+        margin-left: 50px;
+    }
+    
+    .imagen__ubicacion{
+        padding: 15px;
+        margin-left: 35px;
+    }
+    
+    fieldset{
+        width: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 150px;
+    }
+
+    footer{
+        margin-top: 0;
+        padding: 20px;
+        margin-top: 25px ;
+    }
+
+    .parrafo__footer{
+        font-family: 'Chakra Petch', sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .icono__redes{
+        height: 50px;
+        margin-right: 25px;
+    }
+}
 
 @media (min-width:500px){
     .envoltura{
