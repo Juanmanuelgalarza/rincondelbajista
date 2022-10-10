@@ -1,0 +1,773 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: bisque;
+}
+
+/*mobile first 0px-500px*/
+header {
+  font-size: larger;
+  display: grid;
+  justify-content: center;
+  font-family: "Blinker", sans-serif;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: 75px;
+  display: inline;
+  justify-content: space-between;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+footer {
+  padding: 3em;
+  background-color: aqua;
+  margin-bottom: 0;
+  margin-top: 1.5em;
+}
+
+/*declaro nombre de las áreas para las grillas*/
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+.galeria-grid {
+  grid-area: galeria;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.contenido1 {
+  grid-area: contenido1;
+}
+
+.contenido2 {
+  grid-area: contenido2;
+}
+
+.envoltura {
+  background-color: aquamarine;
+  margin-bottom: 1.5em;
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "header" "nav" "contenido1" "contenido2" "galeria" "footer";
+}
+
+.contenido1 {
+  background-color: bisque;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 15px;
+  justify-items: center;
+}
+
+.contenido2 {
+  background-color: bisque;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 15px;
+  justify-items: center;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.imagen__pentagrama {
+  width: 300px;
+  height: 250px;
+  margin-top: 15px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 15px;
+}
+
+.imagen__bajobtb {
+  width: 300px;
+  height: 250px;
+  margin-top: 15px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 15px;
+}
+
+.imagen__bajobtb--servicios {
+  width: 300px;
+  height: 250px;
+  margin-top: 15px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 15px;
+}
+
+@media (min-width: 0px) {
+  nav ul li {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Chakra Petch", sans-serif;
+  }
+  .video__servicios {
+    width: 300px;
+  }
+  .imagen__ibanez {
+    margin-top: 15px;
+    padding: 2px;
+    height: 575px;
+    width: 300px;
+    margin-left: 30px;
+  }
+  .imagen__ibanez--bajo {
+    height: 555px;
+    width: 350px;
+    padding: 2px;
+  }
+  .imagen__bajo6cuerdas {
+    height: 250px;
+    width: 250px;
+    padding: 50px;
+    margin-left: 50px;
+  }
+  .imagen__bajo6cuerdas--schecter {
+    padding: 100px;
+    width: 250px;
+  }
+  .imagen__bajo6cuerdas--yamaha {
+    height: 300px;
+    width: 250px;
+    padding: 15px;
+    margin-left: 50px;
+  }
+  .imagen__ubicacion {
+    padding: 15px;
+    margin-left: 35px;
+  }
+  fieldset {
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+  }
+  footer {
+    margin-top: 0;
+    padding: 20px;
+    margin-top: 25px;
+  }
+  .parrafo__footer {
+    font-family: "Chakra Petch", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .icono__redes {
+    height: 50px;
+    margin-right: 25px;
+  }
+}
+@media (min-width: 500px) {
+  .envoltura {
+    margin: 0;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "header  header" "nav     nav" "contenido1  contenido2" "galeria  galeria" "footer   footer";
+  }
+  nav ul li {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Chakra Petch", sans-serif;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+  }
+  .contenido1 .contenido2 {
+    background-color: rgba(17, 85, 136, 0.6);
+    display: grid;
+    margin: 3em;
+  }
+  .imagen__pentagrama {
+    border: 5px solid black;
+    width: 200px;
+    height: 150px;
+  }
+  .video__servicios {
+    width: 400px;
+  }
+  .imagen__bajobtb {
+    border: 5px solid black;
+    width: 200px;
+    height: 150px;
+  }
+  .imagen__bajobtb--servicios {
+    width: 365px;
+    height: 300px;
+    margin-top: 20px;
+  }
+  .imagen__ibanez {
+    margin-top: 15px;
+    padding: 2px;
+    height: 575px;
+    width: 350px;
+    margin-left: 30px;
+  }
+  .imagen__ibanez--bajo {
+    height: 555px;
+    width: 350px;
+    padding: 2px;
+  }
+  .imagen__bajo6cuerdas {
+    height: 400px;
+    width: 250px;
+    padding: 50px;
+    margin-left: 50px;
+  }
+  .imagen__bajo6cuerdas--schecter {
+    padding: 100px;
+    width: 250px;
+  }
+  .imagen__bajo6cuerdas--yamaha {
+    height: 400px;
+    width: 250px;
+    padding: 50px;
+    margin-left: 50px;
+  }
+  .subtitulo__novedades--instrumentos {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 60px;
+    font-family: "Blinker", sans-serif;
+  }
+  .parrafobajo__novedades--instrumentos {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Didact Gothic", sans-serif;
+    text-align: justify;
+  }
+  .subtitulo__novedades--nosotros {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 60px;
+    font-family: "Blinker", sans-serif;
+  }
+  .logo__nosotros {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    width: 350px;
+  }
+  .parrafo__nosotros {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Didact Gothic", sans-serif;
+  }
+  .subtitulo__novedades--contacto {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 60px;
+    font-family: "Blinker", sans-serif;
+  }
+  .subtitulo__novedades--campos {
+    padding: 15x;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 15px;
+    font-family: "Blinker", sans-serif;
+  }
+  .subtitulo__novedades--formulario {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 25px;
+    font-family: "Blinker", sans-serif;
+  }
+  .subtitulo__novedades--botones {
+    width: 100px;
+    height: 20px;
+    font-family: "Blinker", sans-serif;
+    font-size: small;
+    align-content: space-between;
+    margin: 20px;
+  }
+  .subtitulo__novedades--ubicacion {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: "Blinker", sans-serif;
+  }
+  .imagen__ubicacion {
+    padding: 15px;
+    margin-left: 35px;
+  }
+  fieldset {
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+  }
+  footer {
+    margin-top: 0;
+    padding: 20px;
+    margin-top: 25px;
+  }
+  .parrafo__footer {
+    font-family: "Chakra Petch", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .icono__redes {
+    height: 50px;
+    margin-right: 25px;
+  }
+}
+@media (min-width: 768px) {
+  body {
+    background-color: bisque;
+  }
+  .envoltura {
+    background-color: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgba(167, 106, 123, 0.950017507) 100%);
+    margin-bottom: 1.5em;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "header  header  header" "nav  nav  nav" "galeria  galeria  galeria" "footer  footer  footer";
+  }
+  nav ul li {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Chakra Petch", sans-serif;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+  }
+  .contenido1 .contenido2 {
+    background-color: rgba(17, 85, 136, 0.6);
+    display: grid;
+    margin: 3em;
+  }
+  .imagen__pentagrama {
+    border: 5px solid black;
+    width: 200px;
+    height: 150px;
+  }
+  .imagen__bajobtb {
+    border: 5px solid black;
+    width: 200px;
+    height: 150px;
+  }
+  .imagen__bajobtb--servicios {
+    width: 365px;
+    height: 300px;
+    margin-top: 20px;
+  }
+  .imagen__ibanez {
+    margin-top: 15px;
+    padding: 2px;
+    height: 575px;
+    width: 200px;
+    margin-left: 30px;
+  }
+  .imagen__ibanez--bajo {
+    height: 555px;
+    width: 700px;
+    padding: 2px;
+  }
+  .imagen__bajo6cuerdas {
+    height: 400px;
+    width: 250px;
+    padding: 50px;
+    margin-left: 50px;
+  }
+  .imagen__bajo6cuerdas--schecter {
+    padding: 100px;
+  }
+  .imagen__bajo6cuerdas--yamaha {
+    height: 400px;
+    width: 250px;
+    padding: 50px;
+    margin-left: 50px;
+  }
+  .parrafobajo__novedades--instrumentos {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Didact Gothic", sans-serif;
+    text-align: justify;
+  }
+  .subtitulo__novedades--nosotros {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 60px;
+    font-family: "Blinker", sans-serif;
+  }
+  .logo__nosotros {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 300px;
+    width: 350px;
+  }
+  .parrafo__nosotros {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Didact Gothic", sans-serif;
+  }
+  .subtitulo__novedades--contacto {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 60px;
+    font-family: "Blinker", sans-serif;
+  }
+  .subtitulo__novedades--campos {
+    padding: 15x;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 15px;
+    font-family: "Blinker", sans-serif;
+  }
+  .subtitulo__novedades--formulario {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 25px;
+    font-family: "Blinker", sans-serif;
+  }
+  .subtitulo__novedades--botones {
+    width: 100px;
+    height: 20px;
+    font-family: "Blinker", sans-serif;
+    font-size: small;
+    align-content: space-between;
+    margin: 20px;
+  }
+  .subtitulo__novedades--ubicacion {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: "Blinker", sans-serif;
+  }
+  .imagen__ubicacion {
+    padding: 15px;
+    margin-left: 45px;
+  }
+  fieldset {
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 280px;
+  }
+  footer {
+    margin-top: 1.5em;
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgba(167, 106, 123, 0.950017507) 100%);
+  }
+  .parrafo__footer {
+    font-family: "Chakra Petch", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .icono__redes {
+    height: 55px;
+    margin-right: 45px;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    background-color: bisque;
+  }
+  .contenido1 .contenido2 {
+    padding: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    margin: 0;
+  }
+  nav ul li {
+    padding: 75px;
+    display: inline;
+    justify-content: space-between;
+    font-family: "Chakra Petch", sans-serif;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: black;
+  }
+  a:hover {
+    -webkit-animation: cambio-color 4s;
+            animation: cambio-color 4s;
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    transition: 2s;
+  }
+  .carousel-inner {
+    height: 500px;
+    margin: 3px;
+  }
+  .imagen__pentagrama {
+    margin-top: 30px;
+    margin-left: 60px;
+    display: flex;
+    justify-content: center;
+    height: 190px;
+    float: left;
+  }
+  .imagen__bajobtb {
+    margin-top: 20px;
+    margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    height: 190px;
+    float: right;
+  }
+  .imagen__bajobtb--servicios {
+    width: 465px;
+    height: 400px;
+    margin-top: 20px;
+  }
+  .imagen__ibanez {
+    margin-top: 15px;
+    padding: 2px;
+    height: 675px;
+    margin-left: 30px;
+  }
+  .imagen__ibanez--bajo {
+    height: 675px;
+    width: 400px;
+    padding: 2px;
+  }
+  .imagen__bajo6cuerdas--yamaha {
+    height: 550px;
+    width: 400px;
+    padding: 2px;
+    margin-left: 50px;
+  }
+  .imagen__bajo6cuerdas--schecter {
+    padding: 180px;
+  }
+  .imagen__bajo6cuerdas {
+    height: 550px;
+    width: 400px;
+    padding: 2px;
+    margin-left: 50px;
+  }
+  .subtitulo__novedades {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 60px;
+    font-family: "Blinker", sans-serif;
+  }
+  .subtitulo__novedades--servicios {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 60px;
+    font-family: "Blinker", sans-serif;
+  }
+  .subtitulo__novedades--cursos {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 30px;
+    font-family: "Blinker", sans-serif;
+  }
+  .subtitulo__bajo--destacado {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 60px;
+    font-family: "Blinker", sans-serif;
+  }
+  .subtitulo__novedades--instrumentos {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 60px;
+    font-family: "Blinker", sans-serif;
+  }
+  .subtitulo__novedades--nosotros {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 60px;
+    font-family: "Blinker", sans-serif;
+  }
+  .subtitulo__novedades--contacto {
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 60px;
+    font-family: "Blinker", sans-serif;
+  }
+  .subtitulo__novedades--campos {
+    padding: 15x;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 15px;
+    font-family: "Blinker", sans-serif;
+  }
+  .subtitulo__novedades--formulario {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 25px;
+    font-family: "Blinker", sans-serif;
+  }
+  .subtitulo__novedades--botones {
+    width: 100px;
+    height: 20px;
+    font-family: "Blinker", sans-serif;
+    font-size: small;
+    align-content: space-between;
+    margin: 20px;
+  }
+  .subtitulo__novedades--ubicacion {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: "Blinker", sans-serif;
+  }
+  .imagen__ubicacion {
+    padding: 15px;
+    margin-left: 50px;
+  }
+  fieldset {
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 800px;
+  }
+  .logo__nosotros {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 700px;
+    width: 500px;
+  }
+  .parrafo__novedades {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Didact Gothic", sans-serif;
+  }
+  .parrafo__bajoDestacado {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Didact Gothic", sans-serif;
+  }
+  .parrafo__novedades--servicios {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Didact Gothic", sans-serif;
+  }
+  .parrafobajo__novedades--instrumentos {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Didact Gothic", sans-serif;
+    text-align: justify;
+  }
+  .parrafo__nosotros {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Didact Gothic", sans-serif;
+  }
+  footer {
+    margin-top: 1.5em;
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgba(167, 106, 123, 0.950017507) 100%);
+    padding: 20px;
+    margin-bottom: 0px;
+    margin-top: 25px;
+  }
+  .parrafo__footer {
+    font-family: "Chakra Petch", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 180px;
+  }
+  .icono__redes {
+    display: inline;
+    height: 60px;
+    margin-right: 180px;
+  }
+  .icono__redes:hover {
+    transform: scale(2);
+    transition-property: all;
+    transition-duration: 2s;
+  }
+}/*# sourceMappingURL=estilos.css.map */
