@@ -1,0 +1,32 @@
+.contenido1{
+    h2{
+        padding: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 60px;
+        font-family: 'Blinker', sans-serif;
+    }
+    h3{
+        padding: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 30px;
+        font-family: 'Blinker', sans-serif;
+    }
+    img{
+        margin-top: 30px;
+        margin-left: 60px;
+        display: flex;
+        justify-content: center;
+        height: 190px; 
+        float: left;
+    }
+    p{
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Didact Gothic', sans-serif;
+    }
+}
