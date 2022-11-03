@@ -1,6 +1,8 @@
 @import "fuentes";
 @import "generales";
+@import "galeriaGrid";
 /*mobile first 0px-500px*/
+
 
 
 
@@ -87,6 +89,7 @@ footer{
     gap: 15px;
     justify-items: center;
     font-family: 'Didact Gothic', sans-serif;
+    
 }
 
 .imagen__pentagrama{
@@ -834,6 +837,7 @@ footer{
         display: flex;
         flex-direction: column;
         font-family: 'Didact Gothic', sans-serif;
+        font-size: 20px;
     }
     
 
@@ -842,6 +846,7 @@ footer{
         display: flex;
         flex-direction: column;
         font-family: 'Didact Gothic', sans-serif;
+        font-size: 20px;
     }
 
     .parrafo__novedades--servicios{
@@ -849,6 +854,7 @@ footer{
         display: flex;
         flex-direction: column;
         font-family: 'Didact Gothic', sans-serif;
+        font-size: 20px;
     }
 
     .parrafobajo__novedades--instrumentos{

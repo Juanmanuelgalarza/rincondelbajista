@@ -90,6 +90,8 @@ footer{
     grid-template-rows: 1fr;
     gap: 15px;
     justify-items: center;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 20px;
 }
 
 
@@ -100,6 +102,7 @@ footer{
     gap: 15px;
     justify-items: center;
     font-family: 'Didact Gothic', sans-serif;
+    font-size: 20px;
 }
 
 .imagen__pentagrama{
@@ -312,6 +315,7 @@ footer{
         flex-direction: column;
         font-family: 'Didact Gothic', sans-serif;
         text-align: justify;
+        font-size: 20px;
     }
 
     .subtitulo__novedades--nosotros{
@@ -337,6 +341,7 @@ footer{
         flex-direction: column;
         text-align: center;
         font-family: 'Didact Gothic', sans-serif;   
+        font-size: 20px;
     }
 
     .subtitulo__novedades--contacto{
